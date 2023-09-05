@@ -133,3 +133,18 @@ export const experienceMap= new Map([
         }
     ]
 ]);
+
+export const projectsArray=[
+    {
+        title: 'ClutchPlay',
+        about: 'Clutchplay is a Progressive Web Application (PWA) that provides users with comprehensive NBA-related content. It offers information on upcoming matches, lists of players, teams, stadiums, and the latest news about players. This application is built using React, Vite.js, Daisy UI, and Tailwind CSS.',
+        deployedLink: 'https://cp-web-shanvit7.vercel.app',
+        githubLink: 'https://github.com/Shanvit7/ClutchPlay'
+    },
+    {
+        title: 'synthAIze',
+        about: 'synthAIze is a web application built on Next.js that offers a variety of AI-based text services. Powered by cloud functions and RapidAPI, it combines cutting-edge artificial intelligence with user-friendly features to deliver advanced text processing capabilities.',
+        deployedLink: 'https://synthi-a-ize-web.vercel.app/',
+        githubLink: 'https://github.com/Shanvit7/synthiAIze-web'
+    }
+];
