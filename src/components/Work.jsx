@@ -2,7 +2,8 @@ import SkillSet from "./SkillSet";
 const Work = ({ 
     projectName = '',
     projectInfo = '',
-    contributions = []
+    contributions = [],
+    skills = new Map([])
 }) => {
     return (
     <section className="relative p-8 grid lg:grid-cols-3">
@@ -14,7 +15,7 @@ const Work = ({
           <h5 className="block text-xl pt-4 font-medium text-inherit antialiased">
             About:
           </h5>
-          <p className="block text-xl pt-4 font-normal text-inherit antialiased">
+          <p className="block text-md pt-4 font-normal text-inherit antialiased">
             {projectInfo}
           </p>
         </div>
@@ -43,7 +44,7 @@ const Work = ({
         <h1 className="block text-2xl font-sans font-bold tracking-normal text-inherit antialiased">
           Skills:
         </h1>
-        <SkillSet />
+        <SkillSet skills={skills}/>
       </div>
     </section>
   );

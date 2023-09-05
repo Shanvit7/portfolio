@@ -14,6 +14,7 @@ const Experience = () => {
     projectName = '',
     projectInfo = '',
     contributions = [],
+    skills = new Map([]),
     month = '',
     year = null
    } = getExperienceAccToMonth(Number(XP)) ?? {};
@@ -43,12 +44,14 @@ const Experience = () => {
          projectInfo={projectInfo}
          projectName={projectName}
          contributions={contributions}
+         skills={skills}
         />
         <div className="p-4">
           <DurationSlider
            setXP={setXP}
            month={month}
            year={year}
+
            />
         </div>
       </div>
