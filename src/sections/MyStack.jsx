@@ -26,20 +26,41 @@ const MyStack = () => {
         </h1>
       </div>
       <div className="grid lg:grid-cols-6 p-16 gap-16 justify-center">
+      <div className="w-32 h-32">
+            <img src={'/html.png'} alt='React'/>
+        </div>
+        <div className="w-32 h-32">
+            <img src={'/css.png'} alt='React'/>
+        </div>
         <div className="w-32 h-32">
             <img src={'/javascript.png'} alt='React'/>
+        </div>
+        <div className="w-32 h-32">
+            <img src={'/typescript.png'} alt='React'/>
+        </div>
+        <div className="w-32 h-32">
+            <img src={'/tailwind.png'} alt='React'/>
+        </div>
+        <div className="w-32 h-32">
+            <img src={'/sass.png'} alt='React'/>
         </div>
         <div className="w-32 h-32">
             <img src={'/react.png'} alt='React'/>
         </div>
         <div className="w-32 h-32">
+            <img src={'/git.png'} alt='React'/>
+        </div>
+        <div className="w-32 h-32">
             <img src={'/nodejs.png'} alt='React'/>
+        </div>
+        <div className="w-32 h-32">
+            <img src={'/mongo-db.png'} alt='React'/>
         </div>
         <div className="w-32 h-32">
             <img src={'/npm.png'} alt='React'/>
         </div>
         <div className="w-32 h-32">
-            <img src={'/typescript.png'} alt='React'/>
+            <img src={'/visual-studio-code.png'} alt='React'/>
         </div>
       </div>
     </section>
