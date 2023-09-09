@@ -11,7 +11,7 @@ const DurationSlider = ({
     setValue(event.target.value);
   };
   return (
-    <div className="flex flex-col items-center justify-center w-full p-8">
+    <div className="flex flex-col items-center justify-center w-full p-4 lg:p-8">
         <h5 className="text-center p-8 font-bold text-2xl">
             {`${month} ${year}`}
         </h5>

@@ -1,6 +1,5 @@
 
 const Contact = ()=>{
-    console.log(import.meta.env.PROVIDED_EMAIL);
     return(
         <section className="w-screen p-10">
                 <div className="border-2 border-white h-64 flex flex-col gap-12 justify-center items-center">
