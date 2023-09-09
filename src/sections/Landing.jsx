@@ -45,7 +45,7 @@ const Landing = () => {
       </div>
 
       <div className="w-screen xl:w-1/2">
-        <section id="nameText">
+        <section id="nameText" className="opacity-0">
           <h1 className="block text-center text-2xl font-sans font-bold leading-tight tracking-normal text-inherit antialiased">
             Shanvit S Shetty
           </h1>

@@ -3,9 +3,12 @@ import Lottie from "lottie-react";
 import projectsAnimation from "../assets/animation_projects.json";
 import ProjectCard from "../components/ProjectCard";
 import { projectsArray } from "../utils";
+import anime from "animejs";
+
 
 const Projects = () => {
   const animationRef = useRef(null);
+  const sectionRef = useRef(null);
   useEffect(() => {
     const animation = animationRef.current;
     animation?.play();
@@ -13,8 +16,25 @@ const Projects = () => {
       animation?.destroy();
     };
   }, []);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          anime({
+            targets: sectionRef.current,
+            opacity: [0, 1],
+            duration: 1000,
+            delay: 600
+          });
+          observer.unobserve(sectionRef.current);
+        }
+      },
+      { threshold: 0.1 }
+    );
+    observer.observe(sectionRef.current);
+  }, []);
   return (
-    <section className="w-screen p-10">
+    <section ref={sectionRef} className="w-screen p-10 lg:p-32 opacity-0">
       <div className="flex items-center">
         <div className="w-32 h-32">
           <Lottie
