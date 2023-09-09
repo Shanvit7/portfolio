@@ -1,23 +1,10 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import Lottie from "lottie-react";
 import aboutAnimation from "../assets/animation_experience.json";
-
-import { getExperienceAccToMonth } from "../utils";
-
 import Work from "../components/Work";
-import DurationSlider from "../components/DurationSlider";
 
 const Experience = () => {
   const animationRef = useRef(null);
-  const [XP,setXP] = useState(0);
-  const {
-    projectName = '',
-    projectInfo = '',
-    contributions = [],
-    skills = new Map([]),
-    month = '',
-    year = null
-   } = getExperienceAccToMonth(Number(XP)) ?? {};
   useEffect(() => {
     const animation = animationRef.current;
     animation?.play();
@@ -39,21 +26,8 @@ const Experience = () => {
           Experience
         </h1>
       </div>
-      <div className="border-2 border-white rounded-3xl pt-8 w-full">
-        <Work 
-         projectInfo={projectInfo}
-         projectName={projectName}
-         contributions={contributions}
-         skills={skills}
-        />
-        <div className="p-4">
-          <DurationSlider
-           setXP={setXP}
-           month={month}
-           year={year}
-
-           />
-        </div>
+      <div className="border-2 border-white rounded-3xl pt-8 w-full h-1/4">
+        <Work />
       </div>
     </section>
   );

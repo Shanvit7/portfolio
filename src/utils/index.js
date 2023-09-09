@@ -8,13 +8,6 @@ export const experienceMap= new Map([
             month: 'June',
             projectName: 'StorX',
             projectInfo: 'Distributed Cloud Storage Powered by XinFin Blockchain Network',
-            skills: new Map([
-                ['React', 2],
-                ['HTML & CSS', 3],
-                ['JavaScript', 2],
-                ['Redux', 1],
-                ['Material UI',1]
-            ]),
             year: 2022,
             contributions: [
                 'Created responsive dashboard UI',
@@ -29,13 +22,6 @@ export const experienceMap= new Map([
             month: 'June - August',
             projectName: 'Real Eye (formerly known as Remote Eye)',
             projectInfo: 'ThirdEye\'s RealEye platform is a multifaceted technology platform that combines AI and MR to support digital transformation, automation, and operational enhancement across various industries and applications.',
-            skills: new Map([
-                ['React', 3],
-                ['SCSS',2],
-                ['Javascript', 3],
-                ['Redux', 2],
-                ['Material UI', 2],
-            ]),
             year: 2022,
             contributions: [
                 'Created pricing page UI including custom switch & sticky positioned pricing table.',
@@ -52,13 +38,6 @@ export const experienceMap= new Map([
             month: 'September - November',
             projectName: 'Real Eye (formerly known as Remote Eye)',
             projectInfo: 'ThirdEye\'s RealEye platform is a multifaceted technology platform that combines AI and MR to support digital transformation, automation, and operational enhancement across various industries and applications.',
-            skills: new Map([
-                ['React', 3],
-                ['SCSS',4],
-                ['Javascript', 3],
-                ['Redux', 3],
-                ['Material UI', 4],
-            ]),
             year: 2022,
             contributions: [
                 'Created payment dashboard from which user can see their status of payment and payment history (downloadable).',
@@ -74,13 +53,6 @@ export const experienceMap= new Map([
             month: 'December - January',
             projectName: 'Real Eye (formerly known as Remote Eye)',
             projectInfo: 'ThirdEye\'s RealEye platform is a multifaceted technology platform that combines AI and MR to support digital transformation, automation, and operational enhancement across various industries and applications.',
-            skills: new Map([
-                ['React', 3],
-                ['Third party API Integration',2],
-                ['Javascript', 4],
-                ['Redux', 4],
-                ['Material UI', 4],
-            ]),
             year: 2023,
             contributions: [
                 'Implemented typing status (for individual as well as group chat) and delete feature on front end using  MirrorFly Chat SDK',
@@ -97,38 +69,26 @@ export const experienceMap= new Map([
             month: 'February',
             projectName: 'NexBloc',
             projectInfo: 'Focused on revolutionizing the internet by introducing decentralized DNS (dDNS) and promoting cross-chain interoperability.Envisioning a future where personal data protection is enhanced through digital entities on the decentralized web. Making dDomains accessible across all blockchain networks and empower users with the tools to harness the value of this decentralized ecosystem.',
-            skills: new Map([
-                ['React', 4],
-                ['Blockchain',1],
-                ['Pusher JS', 2],
-                ['RTK Query', 3],
-                ['Chakra UI', 3],
-            ]),
             year: 2023,
             contributions: [
-                '',
-                '',
-                '',
+                'Enhanced user dashboard with with real time updates & pusher.js notifications for seamless onboarding.',
+                'Gained insights into Hedera Hashgraph, a secure and fast decentralized network for cryptocurrency transactions and applications.',
+                'Used Metamask, a popular Ethereum wallet and browser extension, for easy interaction with Ethereum networks, smart contracts, and testing blockchain solutions.',
             ]
         }
     ],
     [5,
         {
-            month: 'March - Present',
+            month: 'March 2023 - Present',
             projectName: 'myIDFi',
-            projectInfo: '',
-            skills: new Map([
-                ['React', 4],
-                ['Blockchain',3],
-                ['Styled Components', 4],
-                ['RTK Query', 4],
-                ['Material UI', 5],
-            ]),
+            projectInfo: 'myIDFi represents the first DID digital financial identity and open marketplace platform for consumers for residential mortgage transactions.It enables consumers to compare the costs of live lender mortgage offers, safe and securely, without sharing personal private information with multiple parties.  No annoying phone calls,  just great rates and secure delivery and fulfillment of your personalized mortgage request. ',
             year: '',
             contributions: [
-                '',
-                '',
-                '',
+                'Revamped and created UI pages and components, enhancing the overall user interface.',
+                'Conducted rigorous debugging to resolve UI issues and ensure seamless performance.',
+                'Developed an admin panel that provided comprehensive data analysis on consumers, lenders, and applications, optimizing decision-making processes.',
+                'Integrated a set of APIs for effortless lender profile searching and seamless addition to realtor profiles, streamlining transactions on the platform.',
+                'Collaborated with cross-functional teams to ensure successful API integration and smooth functioning of the platform.',
             ]
         }
     ]
