@@ -21,3 +21,24 @@
 body {
   margin: 0;
 }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fffefc;
+}
+
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #9a9186, #857b70 25%, #75716b 75%, #413c35);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+  ::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+}

@@ -60,7 +60,7 @@ export const experienceMap= new Map([
                 'Fixed several bugs & UI issues',
                 'Handled the logic on front end for incoming VOIP calls while the current call is still in progress.',
                 'Worked with Jitsi Meet (Video conferencing solution) & pusher JS to notify the backend server about call being eneded.',
-                'Learn more about handling different API responses and different ways that can be used while communicatig with backend server.'
+                'Learned more about handling different API responses and different ways that can be used while communicatig with backend server.'
             ]
         }
     ],
