@@ -1,5 +1,5 @@
 export const getExperienceAccToMonth=( exp = 0)=>{
-   return experienceMap.get(exp) ??  {};
+   return experienceMap.get(Math.floor(exp)) ??  {};
 };
 
 export const experienceMap= new Map([

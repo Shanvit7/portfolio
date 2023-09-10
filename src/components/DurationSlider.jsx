@@ -20,10 +20,10 @@ const DurationSlider = ({
         type="range"
         min={0}
         max={5}
-        step={1}
+        step={0.25}
         value={value}
         onChange={handleChange}
-        className="w-full h-2 rounded-md appearance-none bg-white outline-none cursor-pointer accent-zinc-800"
+        className="w-full h-2 rounded-md appearance-none bg-white outline-none cursor-pointer accent-zinc-800 transition-all duration-300 ease"
       />
     </div>
   );
