@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from "react";
-import anime from "animejs"; // Import Anime.js
-import { getExperienceAccToMonth } from "../utils";
-import DurationSlider from "./DurationSlider";
+import anime from "animejs";
+import { getExperienceAccToMonth, experienceMap } from "../utils";
 
 const Work = () => {
   const [XP, setXP] = useState(0);
   const {
-    projectName = "",
-    projectInfo = "",
-    contributions = [],
-    month = "",
-    year = null,
+    projectName = '',
+    projectInfo = '',
+    contributions = []
   } = getExperienceAccToMonth(Number(XP)) ?? {};
 
   const animateText = () => {
@@ -39,16 +36,24 @@ const Work = () => {
   };
 
   useEffect(() => {
-    if (!(XP % 1 !== 0)) {
-      animateTitleText();
-      animateText();
-    }
+    animateTitleText();
+    animateText();
   }, [XP]);
 
+
+  const handleNext=()=>{
+    setXP(XP + 1);
+  };
+
+  const handlePrev=()=>{
+    setXP(XP - 1);
+  };
+  const initialWork = XP === 0; 
+  const finalWork = (XP + 1) === experienceMap.size;
   return (
     <section className="relative p-8 flex flex-col-reverse lg:flex-col">
-      <h1 className="hidden lg:block text-2xl font-sans font-bold tracking-normal text-inherit antialiased animate-title-text">
-        # {projectName}
+      <h1 className="hidden lg:block text-3xl font-sans font-bold tracking-normal text-inherit antialiased animate-title-text">
+         {projectName}
       </h1>
 
       <div className="flex flex-col lg:flex-row justify-between w-full pt-4 h-full lg:h-72">
@@ -77,12 +82,20 @@ const Work = () => {
           </ol>
         </div>
       </div>
-      <DurationSlider 
-       setXP={setXP}
-       month={month} 
-       year={year} 
-       XP={XP} 
-      />
+      <div className="flex gap-8 w-full">
+      <button 
+       className={`${initialWork && 'hidden' } hover:animate-pulse  w-24 h-12  bg-white text-black font-bold p-2 rounded-lg shadow-md`}
+       onClick={handlePrev}
+      >
+        Prev
+      </button>
+      <button 
+       className={`${finalWork && 'hidden'} hover:animate-pulse w-24 h-12  bg-white text-black font-bold p-2 rounded-lg shadow-md`}
+       onClick={handleNext}
+      >
+        Next
+      </button>
+      </div>
     </section>
   );
 };

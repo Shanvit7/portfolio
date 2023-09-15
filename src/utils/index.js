@@ -5,10 +5,8 @@ export const getExperienceAccToMonth=( exp = 0)=>{
 export const experienceMap= new Map([
     [0,
         {
-            month: 'June',
             projectName: 'StorX',
             projectInfo: 'Distributed Cloud Storage Powered by XinFin Blockchain Network',
-            year: 2022,
             contributions: [
                 'Created responsive dashboard UI',
                 'Created custom hamburger menu',
@@ -18,11 +16,9 @@ export const experienceMap= new Map([
         }
     ],
     [1,
-        {
-            month: 'June - August',
+           {
             projectName: 'Real Eye (formerly known as Remote Eye)',
             projectInfo: 'ThirdEye\'s RealEye platform is a multifaceted technology platform that combines AI and MR to support digital transformation, automation, and operational enhancement across various industries and applications.',
-            year: 2022,
             contributions: [
                 'Created pricing page UI including custom switch & sticky positioned pricing table.',
                 'Developed Sign In and Sign Up pages UI.',
@@ -35,10 +31,8 @@ export const experienceMap= new Map([
     ],
     [2,
         {
-            month: 'September - November',
             projectName: 'Real Eye (formerly known as Remote Eye)',
             projectInfo: 'ThirdEye\'s RealEye platform is a multifaceted technology platform that combines AI and MR to support digital transformation, automation, and operational enhancement across various industries and applications.',
-            year: 2022,
             contributions: [
                 'Created payment dashboard from which user can see their status of payment and payment history (downloadable).',
                 'Debugged bugs and UI issues, improving overall UX of the platform.',
@@ -50,10 +44,8 @@ export const experienceMap= new Map([
     ],
     [3,
         {
-            month: 'December - January',
             projectName: 'Real Eye (formerly known as Remote Eye)',
             projectInfo: 'ThirdEye\'s RealEye platform is a multifaceted technology platform that combines AI and MR to support digital transformation, automation, and operational enhancement across various industries and applications.',
-            year: 2023,
             contributions: [
                 'Implemented typing status (for individual as well as group chat) and delete feature on front end using  MirrorFly Chat SDK',
                 'Gained deeper understanding about react component lifecycle and asyncrhounous state management',
@@ -66,10 +58,8 @@ export const experienceMap= new Map([
     ],
     [4,
         {
-            month: 'February',
             projectName: 'NexBloc',
             projectInfo: 'Focused on revolutionizing the internet by introducing decentralized DNS (dDNS) and promoting cross-chain interoperability.Envisioning a future where personal data protection is enhanced through digital entities on the decentralized web. Making dDomains accessible across all blockchain networks and empower users with the tools to harness the value of this decentralized ecosystem.',
-            year: 2023,
             contributions: [
                 'Enhanced user dashboard with with real time updates & pusher.js notifications for seamless onboarding.',
                 'Gained insights into Hedera Hashgraph, a secure and fast decentralized network for cryptocurrency transactions and applications.',
@@ -79,10 +69,8 @@ export const experienceMap= new Map([
     ],
     [5,
         {
-            month: 'March 2023 - Present',
             projectName: 'myIDFi',
             projectInfo: 'myIDFi represents the first DID digital financial identity and open marketplace platform for consumers for residential mortgage transactions.It enables consumers to compare the costs of live lender mortgage offers, safe and securely, without sharing personal private information with multiple parties.  No annoying phone calls,  just great rates and secure delivery and fulfillment of your personalized mortgage request. ',
-            year: '',
             contributions: [
                 'Revamped and created UI pages and components, enhancing the overall user interface.',
                 'Conducted rigorous debugging to resolve UI issues and ensure seamless performance.',
