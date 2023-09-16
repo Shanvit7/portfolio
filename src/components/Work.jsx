@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import anime from "animejs";
 import { getExperienceAccToMonth, experienceMap } from "../utils";
 
@@ -9,10 +9,11 @@ const Work = () => {
     projectInfo = '',
     contributions = []
   } = getExperienceAccToMonth(Number(XP)) ?? {};
+  const prevProjectNameRef = useRef(projectName);
+  const prevProjectInfoRef = useRef(projectInfo);
 
   const animateText = () => {
     const textElements = document.querySelectorAll(".animate-text");
-
     anime({
       targets: textElements,
       opacity: [0, 1],
@@ -35,9 +36,29 @@ const Work = () => {
     });
   };
 
+  const animateContributionText = () => {
+    const contributionText = document.querySelectorAll(".animate-contribution-text");
+    anime({
+      targets: contributionText,
+      opacity: [0, 1],
+      translateY: [20, 0],
+      duration: 800,
+      easing: "easeOutQuad",
+      delay: anime.stagger(100),
+    });
+  };
+
   useEffect(() => {
-    animateTitleText();
-    animateText();
+    if (prevProjectNameRef.current !== projectName || prevProjectInfoRef.current !== projectInfo) {
+      animateTitleText();
+      animateText();
+      prevProjectNameRef.current = projectName;
+      prevProjectInfoRef.current = projectInfo;
+    }
+  }, [projectName, projectInfo]);
+
+  useEffect(() => {
+    animateContributionText();
   }, [XP]);
 
 
@@ -75,7 +96,7 @@ const Work = () => {
           </h1>
           <ol className="p-8 list-disc">
             {contributions?.map((workDone, index) => (
-              <li key={index} className="animate-text">
+              <li key={index} className="animate-contribution-text">
                 {workDone}
               </li>
             ))}
