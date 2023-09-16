@@ -1,7 +1,6 @@
 import { useRef, useEffect } from "react";
 import Lottie from "lottie-react";
 import aboutAnimation from "../assets/animation_about.json";
-import StarrySkyLayout from "../layouts/StarrySkyLayout";
 import anime from "animejs";
 
 const About = () => {

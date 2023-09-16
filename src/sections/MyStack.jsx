@@ -32,7 +32,7 @@ const MyStack = () => {
     observer.observe(sectionRef.current);
   }, []);
   return (
-    <section ref={sectionRef} className="w-screen p-10 lg:p-32 opacity-0">
+    <section ref={sectionRef} className="w-screen p-10 lg:p-32 opacity-0 mystack-section-body">
       <div className="flex items-center">
         <div className="w-32 h-32">
         <Lottie

@@ -36,6 +36,49 @@
   1px 30px 60px rgba(16,16,16,0.4);
 }
 
+.about-section-body{
+  background: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%);
+}
+
+.projects-section-body{
+  background: linear-gradient(to right, #47E16A 0%, #4DC8FF 100%);
+}
+
+.experience-section-body{
+  background: linear-gradient(to right, #120E43 0%, #7801E3 100%);
+}
+
+.mystack-section-body {
+  background: black;
+  animation: backgroundAnimation 18s infinite; /* 3 seconds for each color, total animation duration is 18s */
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background 0.5s ease; /* Adjusted transition time for smoother effect */
+  animation-timing-function: ease;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background: #0A436F; /* A darker blue representing technology */
+  }
+  20% {
+    background: #3C8DC5; /* A softer blue for web tech */
+  }
+  40% {
+    background: #095F94; /* A slightly darker blue for balance */
+  }
+  60% {
+    background: #6bc314; /* A muted green for front-end */
+  }
+  80% {
+    background: #EFAE00; /* A muted yellow for databases */
+  }
+  100% {
+    background: #e34e13; /* A subdued red for JavaScript */
+  }
+}
+
+
 body {
   margin: 0;
 }
