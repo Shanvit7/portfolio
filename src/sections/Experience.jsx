@@ -41,7 +41,7 @@ const Experience = () => {
             lottieRef={animationRef}
           />
         </div>
-        <h1 className="block text-4xl font-sans font-bold tracking-normal text-inherit antialiased">
+        <h1 className="block three-D-text text-4xl font-sans font-bold tracking-normal text-inherit antialiased">
           Experience
         </h1>
       </div>

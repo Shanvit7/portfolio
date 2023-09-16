@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import Lottie from "lottie-react";
 import aboutAnimation from "../assets/animation_about.json";
+import StarrySkyLayout from "../layouts/StarrySkyLayout";
 import anime from "animejs";
 
 const About = () => {
@@ -31,7 +32,7 @@ const About = () => {
     observer.observe(sectionRef.current);
   }, []);
   return (
-    <section ref={sectionRef} className="w-screen p-10 lg:p-32 opacity-0">
+    <section ref={sectionRef} className="w-screen about-section-body p-10 lg:p-32 opacity-0">
       <div className="flex items-center">
         <div className="w-32 h-32">
           <Lottie
@@ -40,7 +41,7 @@ const About = () => {
             lottieRef={animationRef}
           />
         </div>
-        <h1 className="block text-4xl font-sans font-bold tracking-normal text-inherit antialiased">
+        <h1 className="block three-D-text text-4xl font-sans font-bold tracking-normal text-inherit antialiased">
           About
         </h1>
       </div>

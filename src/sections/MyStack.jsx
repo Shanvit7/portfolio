@@ -41,7 +41,7 @@ const MyStack = () => {
             lottieRef={animationRef}
           />
         </div>
-        <h1 className="block text-4xl font-sans font-bold tracking-normal text-inherit antialiased">
+        <h1 className="block text-4xl three-D-text font-sans font-bold tracking-normal text-inherit antialiased">
           My Stack
         </h1>
       </div>
