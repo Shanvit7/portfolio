@@ -36,7 +36,7 @@ const StarsLayout = () => {
 
   return (
     <Canvas style={{ overflow: 'auto', position: 'fixed', width: '99vw' }}>
-      <OrbitControls enableRotate={false} autoRotate={true} />
+      <OrbitControls enableRotate={false} autoRotate={true} autoRotateSpeed={7} />
       <ambientLight intensity={0.1} />
       <pointLight intensity={1} position={[10, 10, 10]} />
       <Stars />
