@@ -7,9 +7,11 @@ import Projects from "../sections/Projects";
 import MyStack from "../sections/MyStack";
 import Contact from "../sections/Contact";
 
+import StarsLayout from "../layouts/StarsLayout";
 const Home = () => {
   return (
     <PageLayout>
+      <StarsLayout />
       <Landing />
       <About />
       <Experience />

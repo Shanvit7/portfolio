@@ -32,7 +32,7 @@ const Landing = () => {
       };
     }, []);
   return (
-    <section className="w-screen flex flex-col  items-center space-around p-10 xl:flex-row">
+    <section className="w-screen flex flex-col items-center space-around p-10 xl:flex-row">
       <div className="w-screen xl:w-1/2">
         <div className="w-10/12">
           <Lottie
