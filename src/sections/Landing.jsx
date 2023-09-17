@@ -50,7 +50,7 @@ const Landing = () => {
             Shanvit S Shetty
           </h1>
           <h3 className="block text-center text-md font-sans font-semibold leading-relaxed tracking-normal text-inherit antialiased">
-            Frontend DEV @ IOTric
+            Frontend DEV
           </h3>
         </section>
         <p
