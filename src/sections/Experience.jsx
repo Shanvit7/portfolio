@@ -1,7 +1,9 @@
 import { useRef, useEffect } from "react";
-import Lottie from "lottie-react";
-import aboutAnimation from "../assets/animation_experience.json";
+// COMPONENTS
 import Work from "../components/Work";
+// ANIMATIONS
+import Lottie from "lottie-react";
+import experienceLottie from "../assets/animation_experience.json";
 import anime from "animejs";
 
 const Experience = () => {
@@ -36,7 +38,7 @@ const Experience = () => {
       <div className="flex items-center">
         <div className="w-32 h-32">
           <Lottie
-            animationData={aboutAnimation}
+            animationData={experienceLottie}
             autoplay={true}
             lottieRef={animationRef}
           />

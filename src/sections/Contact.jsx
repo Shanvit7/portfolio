@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+// ANIMATIONS
 import Lottie from "lottie-react";
 import LinkedInLottie from "../assets/animation_linkedin.json";
 import gMailLottie from "../assets/animation_gmail.json";

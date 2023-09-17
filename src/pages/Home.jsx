@@ -1,5 +1,6 @@
+// PAGE LAYOUT
 import PageLayout from "../layouts/PageLayout";
-
+// PAGE SECTIONS
 import Landing from "../sections/Landing";
 import About from "../sections/About";
 import Experience from "../sections/Experience";

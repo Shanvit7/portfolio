@@ -1,7 +1,8 @@
 import { useRef, useEffect } from "react";
+// ANIMATIONS
 import Lottie from "lottie-react";
 import anime from "animejs";
-import landingAnimation from "../assets/animation_landing.json";
+import landingLottie from "../assets/animation_landing.json";
 
 const Landing = () => {
     const animationRef = useRef(null);
@@ -36,7 +37,7 @@ const Landing = () => {
       <div className="w-screen xl:w-1/2">
         <div className="w-10/12">
           <Lottie
-            animationData={landingAnimation}
+            animationData={landingLottie}
             loop={true}
             autoplay={true}
             lottieRef={animationRef}

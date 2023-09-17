@@ -1,5 +1,7 @@
+// ICONS
 import GitHub from "../icons/Github";
 import WebHosted from "../icons/WebHosted";
+
 const ProjectCard = ({
   title = "",
   about = "",

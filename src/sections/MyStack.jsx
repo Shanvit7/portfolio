@@ -1,8 +1,8 @@
 import { useRef, useEffect } from "react";
+// ANIMATIONS
 import Lottie from "lottie-react";
-import skillsAnimation from "../assets/animation_skills.json";
+import skillsLottie from "../assets/animation_skills.json";
 import anime from "animejs";
-
 
 const MyStack = () => {
   const animationRef = useRef(null);
@@ -36,7 +36,7 @@ const MyStack = () => {
       <div className="flex items-center">
         <div className="w-32 h-32">
         <Lottie
-            animationData={skillsAnimation}
+            animationData={skillsLottie}
             autoplay={true}
             lottieRef={animationRef}
           />

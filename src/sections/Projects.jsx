@@ -1,8 +1,11 @@
 import { useRef, useEffect } from "react";
-import Lottie from "lottie-react";
-import projectsAnimation from "../assets/animation_projects.json";
+// COMPONENTS
 import ProjectCard from "../components/ProjectCard";
+// HELPERS
 import { projectsArray } from "../utils";
+// ANIMATIONS
+import Lottie from "lottie-react";
+import projectsLottie from "../assets/animation_projects.json";
 import anime from "animejs";
 
 
@@ -38,7 +41,7 @@ const Projects = () => {
       <div className="flex items-center">
         <div className="w-32 h-32">
           <Lottie
-            animationData={projectsAnimation}
+            animationData={projectsLottie}
             autoplay={true}
             lottieRef={animationRef}
           />

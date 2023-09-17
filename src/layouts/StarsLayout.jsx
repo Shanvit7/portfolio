@@ -1,6 +1,8 @@
-import React, { useRef } from 'react';
-import { OrbitControls, Stars } from '@react-three/drei';
+import { useRef } from 'react';
+// ANIMATIONS
 import { Canvas, useFrame } from '@react-three/fiber';
+import { OrbitControls, Stars } from '@react-three/drei';
+
 
 const ShootingStar = ({ position }) => {
   const starRef = useRef();

@@ -1,6 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
+// ANIMATIONS
 import anime from "animejs";
+// HELPERS
 import { getExperienceAccToMonth, experienceMap } from "../utils";
+// ICONS
 import RightArrow from "../icons/RightArrow";
 import LeftArrow from "../icons/LeftArrow";
 
