@@ -45,7 +45,7 @@ const MyStack = () => {
           My Stack
         </h1>
       </div>
-      <div className="grid lg:grid-cols-6 p-16 gap-16 justify-center">
+      <div className="grid lg:grid-cols-6 grid-cols-2 lg:p-16 gap-16 justify-center">
       <div className="w-32 h-32">
             <img src={'/html.png'} alt='React'/>
         </div>

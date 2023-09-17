@@ -53,22 +53,22 @@ const Contact = () => {
         <p className="text-center text-lg font-sans font-bold leading-tight tracking-normal text-inherit antialiased">  
           Connect with me: 
         </p>
-        <div className="flex gap-8">
-          <a href={import.meta.env.VITE_PROVIDED_GITHUB} className="w-32 h-32">
+        <div className="flex gap-4 lg:gap-8">
+          <a href={import.meta.env.VITE_PROVIDED_GITHUB} className="lg:w-32 lg:h-32 w-20 h-20">
             <Lottie
               animationData={gitHubLottie}
               autoplay={true}
               lottieRef={gitHubRef}
             />
           </a>
-          <a type="ema" href={"mailto:"+ import.meta.env.VITE_PROVIDED_EMAIL} className="w-32 h-32">
+          <a href={"mailto:"+ import.meta.env.VITE_PROVIDED_EMAIL} className="lg:w-32 lg:h-32 w-20 h-20">
             <Lottie
               animationData={gMailLottie}
               autoplay={true}
               lottieRef={gMailRef}
             />
           </a>
-          <a href={import.meta.env.VITE_PROVIDED_LINKEDIN} className="w-32 h-32">
+          <a href={import.meta.env.VITE_PROVIDED_LINKEDIN} className="lg:w-32 lg:h-32 w-20 h-20">
             <Lottie
               animationData={LinkedInLottie}
               autoplay={true}
